@@ -1,0 +1,105 @@
+body {
+  display: grid;
+  grid-template-columns: 5rem auto;
+  transition: grid-template-columns 0.3s ease;
+}
+
+body:has(nav:hover) {
+  grid-template-columns: 14rem auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-grey);
+  position: relative;
+  height: 12rem;
+}
+
+.header__welcome {
+  font: var(--font-all-capital);
+  font-size: 2.5rem;
+
+}
+
+.header__mehran {
+  font: var(--font-mehran);
+  font-size: 2.5rem;
+  color: var(--color-gold);
+  text-shadow: 0.8rem 0.8rem 0.5rem var(--color-gold);
+  -webkit-text-stroke: 0.5px black;
+}
+
+.mehran__m {
+  font: var(--font-mehran);
+  font-size: 4rem;
+  color: var(--color-gold);
+  text-shadow: 0.8rem 0.8rem 0.5rem var(--color-gold);
+  -webkit-text-stroke: 0.5px black;
+}
+
+.nav {
+  height: 100dvh;
+  background-color: var(--color-blue-light);
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+
+}
+
+.nav li {
+  padding: 4rem 0;
+  font-size: 1.2rem;
+}
+
+.nav li a {
+  text-decoration: none;
+}
+
+/* Hide the text initially */
+.nav li span {
+  display: none;
+  transition: display 0.2s ease;
+  color: var(--color-white);
+  font: var(--font-stylish-bold);
+  font-size: 1.2rem;
+}
+
+/* Show the text when the sidebar is hovered */
+.nav:hover li span {
+  display: block;
+}
+
+.icon-nav {
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  font-size: 2rem;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Monoton&family=Mr+Dafoe&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rubik+Doodle+Triangles&family=Sora:wght@100..800&display=swap');
+
+
+:root {
+  --color-white: white;
+  --color-black: black;
+  --color-text: rgba(0, 0, 0, 0.8);
+  --color-gold: rgb(255, 196, 0);
+  --color-grey: rgba(169, 169, 169, 0.1);
+  --color-blue-light: rgb(166, 100, 253);
+
+
+  --font-text: normal normal 400 16px/1.5 "Libre Baskerville", serif;
+  --font-text-sec: normal normal 400 16px/1.5 "Sora", serif;
+  --font-stylish-bold: normal normal 400 16px/1.5 "Carter One", system-ui;
+  --font-italic-bold: normal normal 400 16px/1.5 "Pacifico", sans-serif;
+  --font-all-capital: normal normal 400 16px/1.5 "Playfair Display SC", serif;
+  --font-lins: normal normal 400 16px/1.5 "Monoton", sans-serif;
+  --font-mesh: normal normal 400 16px/1.5 "Rubik Doodle Triangles", system-ui;
+  --font-mehran: normal normal 400 16px/1.5 "Mr Dafoe", sans-serif;
+}
+
+html * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: var(--font-text);
+}
+
+.btn {
+  border: none;
+  border-radius: 5%;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
