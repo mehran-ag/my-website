@@ -6,8 +6,12 @@
   --color-black: black;
   --color-text: rgba(0, 0, 0, 0.8);
   --color-gold: rgb(255, 196, 0);
-  --color-grey: rgba(169, 169, 169, 0.1);
-  --color-blue-light: rgb(166, 100, 253);
+  --color-grey-light: rgba(169, 169, 169, 0.05);
+  --color-purple-light: rgb(166, 100, 253);
+  --color-blue-light: rgba(99, 208, 255, 0.613);
+  --color-semilight-grey: rgba(168, 168, 168, 0.15);
+  --color-navy: rgb(4, 1, 106);
+  --color-navy-light: rgb(4, 1, 106, 0.9);
 
 
   --font-text: normal normal 400 16px/1.5 "Libre Baskerville", serif;

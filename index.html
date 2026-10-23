@@ -51,22 +51,86 @@
           <i class="fa-solid fa-bars hamburger-menu"></i>
         </button>
       </header>
-      <section class="my-intro">
+      <section class="banner-image">
+        <img src="./images/mechanical-heart.png" alt="mechanical heart">
+      </section>
+      <section id="my-intro" class="my-intro">
         <div class="my-intro__photo">
-
+          <img src="./images/profile-photo.jpeg">
         </div>
         <div class="my-intro__text">
-
+          <p>
+            My name is Mehran. I have a PhD in Bioengineering (but this is not the only thing I know!). I have studied Mechanical Engineering for my master's and bachelor's. It has been a fantastic journey for me as I have had many achievements and I have learned a lot. I have enjoyed hands-on courses as well as computational projects. It is always good to have hands-on skills while being a computational person. I have published scientific papers in international journals. I have also participated in conferences. 
+          </p>
+          <p>
+            I have worked as a Mechanical Engineer for almost 5 years. I started my work experience at a petrochemical company, which was a relatively large complex consisting of many units working together to produce raw materials for plastics. I have seen many different mechanical equipment and parts working together to make the final product.
+            <p>
+              I have also worked as a mechanical designer, where I was a member a team making kitchen appliances.
+            </p>
+            <p>
+             Most recently, I worked as an Operations Engineer at Aroa in New Zealand.
+            </p>
+          </p>
         </div>
       </section>
       <section class="cards">
-        <div class="cards"></div>
-        <div class="cards"></div>
-        <div class="cards"></div>
+        <div class="card">
+          <div class="card-photo">
+            <img src="./images/work-photo.jpg" alt="Mehran and colleagues">
+          </div>
+          <p>
+
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-photo-research">
+            <img src="./images/research-photo.png" at="Channel heat contour arrows">
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-photo">
+            <img src="./images/mehran-graduation.jpg" alt="Mehran graduation">
+          </div>
+        </div>
       </section>
       <footer>
 
       </footer>
     </main>
+    <script>
+      // window.addEventListener("load", () => {
+      //   document.querySelector("#my-intro").scrollIntoView({
+      //     behavior: "smooth"
+      //   });
+      // });
+      window.addEventListener("load", () => {
+        const target = document.querySelector("#my-intro");
+
+        if (!target) return;
+
+        const start = window.scrollY;
+        const end = target.getBoundingClientRect().top + window.scrollY;
+        const duration = 5000;
+        const startTime = performance.now();
+
+        function scroll(time) {
+          const progress = Math.min((time - startTime) / duration, 1);
+
+          // Ease-in-out animation
+          const eased = progress < 0.5
+            ? 2 * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+          window.scrollTo(0, start + (end - start) * eased);
+
+          if (progress < 1) {
+            requestAnimationFrame(scroll);
+          }
+        }
+
+        requestAnimationFrame(scroll);
+      });
+    </script>
   </body>
 </html>
