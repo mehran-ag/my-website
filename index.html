@@ -14,7 +14,7 @@
     <nav class="nav">
       <ul>
         <li>
-          <a href="">
+          <a href="./pages/education.html">
             <i class="fa-solid fa-user-graduate icon-nav"></i>
             <span>Education</span>
           </a>
@@ -39,7 +39,7 @@
         </li>
       </ul>
     </nav>
-    <main>
+    <main class="main-firstpage">
       <header class="header">
         <p class="header__welcome">
           Welcome to my website
@@ -79,31 +79,73 @@
             <img src="./images/work-photo.jpg" alt="Mehran and colleagues">
           </div>
           <p>
-
+            I have worked as a Mechanical Engineer in different companies. From large petrochemical complex to a family-owned production company. And lately, I have worked as an Operations Engineer at Aroa in New Zealand, where I had broader range of respinsibilities to support smooth and continuous production.
           </p>
+          <a class="link card-link">
+            Read more
+          </a>
         </div>
         <div class="card">
-          <div class="card-photo-research">
+          <div id="research-photo" class="card-photo">
             <img src="./images/research-photo.png" at="Channel heat contour arrows">
           </div>
-
+          <p>
+            During and after my academic journey, I have always remained interested in doing research. I enjoy challenges that lead to understanding more about the nature, especially fluids and materials. I want to observe and gain more insight into the things going around in the world. That is why I enjoy seeing new invenstions and I desire to be part of these new discoveries and inventions.
+          </p>
+          <a class="link card-link">
+            Read more
+          </a>
         </div>
         <div class="card">
           <div class="card-photo">
             <img src="./images/mehran-graduation.jpg" alt="Mehran graduation">
           </div>
+          <p>
+            One of best moments in my life was the day I got my certificate to be a doctor from one the most prestigious universities in the world. Although it seemed to be the end of academic learning, but I will continue learning engineering concepts as I enjoy this. Studying Mechanical Engineering for my bachelor's and master's, I gained enough knowledge to apply and merge it with coding and hands-on skills to make new things or study different phenomena.
+          </p>
+          <a class="link card-link">
+            Read more
+          </a>
         </div>
       </section>
-      <footer>
-
+      <footer class="main-footer">
+        <div class="footer__column">
+          <p>My contact information is provided.</p>
+          <p>Feel free to reach out should any questions arise.</p>
+        </div>
+        <div class="footer__column">
+          <div class="footer-row">
+            <i class="fa-solid fa-envelope footer-row__i"></i>
+            <a href="mailto:mehranag77@gmail.com">mehranag77@gmail.com</a>
+          </div>
+          <div class="footer-row">
+            <i class="fa-brands fa-linkedin footer-row__i"></i>
+            <a href="https://www.linkedin.com/in/mehranag/" target="_blank">
+              LinkedIn
+            </a>
+          </div>
+          <div class="footer-row">
+            <i class="fa-brands fa-google-scholar footer-row__i"></i>
+            <a href="https://scholar.google.com/citations?user=iEuszTYAAAAJ&hl=en" target="_blank">
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <iframe
+            src="https://www.google.com/maps?q=Goulburn,NSW,Australia&output=embed"
+            width="90%"
+            height="250"
+            style="border: 0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </footer>
     </main>
-    <script>
-      // window.addEventListener("load", () => {
-      //   document.querySelector("#my-intro").scrollIntoView({
-      //     behavior: "smooth"
-      //   });
-      // });
+
+    <!-- <script>
       window.addEventListener("load", () => {
         const target = document.querySelector("#my-intro");
 
@@ -131,6 +173,6 @@
 
         requestAnimationFrame(scroll);
       });
-    </script>
+    </script> -->
   </body>
 </html>

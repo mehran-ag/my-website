@@ -1,0 +1,60 @@
+.phd {
+  width: 100%;
+  height: auto;
+  min-height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phd__banner {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  background-color: var(--color-white);
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.degree {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--color-blue);
+  padding: 2rem;
+}
+
+.degree h2 {
+  color: var(--color-blue-dark);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.degree__uni-name {
+  margin: 0.5em 0;
+  font-size: 1.5rem;
+}
+
+.degree__thesis {
+  margin: 0.5em 0;
+  font-size: 1rem;
+}
+
+.degree__text-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+}

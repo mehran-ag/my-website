@@ -4,7 +4,10 @@
 :root {
   --color-white: white;
   --color-black: black;
+  --color-blue: blue;
+  --color-blue-dark: rgb(1, 1, 207);
   --color-text: rgba(0, 0, 0, 0.8);
+  --color-white-dimmed: rgba(255, 255, 255, 0.4);
   --color-gold: rgb(255, 196, 0);
   --color-grey-light: rgba(169, 169, 169, 0.05);
   --color-purple-light: rgb(166, 100, 253);
@@ -12,6 +15,9 @@
   --color-semilight-grey: rgba(168, 168, 168, 0.15);
   --color-navy: rgb(4, 1, 106);
   --color-navy-light: rgb(4, 1, 106, 0.9);
+  --color-navy-lightest: rgb(4, 1, 106, 0.8);
+  --color-grey-dark: rgba(39, 30, 109, 0.681);
+  --color-black-dimmed: rgba(40, 37, 42, 0.9);
 
 
   --font-text: normal normal 400 16px/1.5 "Libre Baskerville", serif;
@@ -33,11 +39,16 @@ html * {
 
 .btn {
   border: none;
-  border-radius: 5%;
+  border-radius: 2em;
   color: var(--color-black);
   background-color: var(--color-white);
+  cursor: pointer;
 }
 
-.btn:hover {
+.link {
+  text-decoration: none;
+  background-color: var(--color-white);
+  color: var(black);
   cursor: pointer;
+  border-radius: 2em;
 }
