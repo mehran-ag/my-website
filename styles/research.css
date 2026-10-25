@@ -1,0 +1,123 @@
+.research {
+  width: 100%;
+  height: auto;
+  /* padding: 0 2rem; */
+}
+
+.mechanical-research,
+.biological-research {
+  width: 100%;
+  height: auto;
+  padding: 0 2rem;
+}
+
+/* .biological-research {
+  background-color: var(--color-grey-light);
+} */
+
+.mechanical-research__header,
+.biological-research__header {
+  margin-block-start: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 2px var(--color-black);
+  background-color: var(--color-grey-light);
+}
+
+/* .biological-research__header {
+  margin-block-start: 10rem;
+} */
+
+.space {
+  height: clamp(2rem, 7dvw, 5rem);
+}
+
+.mechanical-research h2,
+.biological-research h2 {
+  width: fit-content;
+  height: auto;
+  font-size: 2rem;
+  margin-block-end: 1rem;
+  border-bottom: 1px solid var(--color-black);
+  color: var(--color-blue)
+}
+
+.mechanical-research p,
+.biological-research p {
+  line-height: 2em;
+}
+
+.research-item {
+  width: 100%;
+  height: auto;
+  margin-block-start: 2rem;
+  border-top: 1px solid var(--color-black);
+}
+
+/* .research-item:last-child {
+  border-bottom: 1px solid var(--color-black);
+} */
+
+.research-item h3 {
+  font-size: 2rem;
+  color: var(--color-blue-darkest);
+  padding-block-start: 2rem;
+}
+
+.research-item__text {
+  margin: 1rem 0;
+  line-height: 2em;
+}
+
+.twin-photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: clamp(0.5rem, 2dvw, 1rem);
+  height: auto;
+  width: 100%;
+}
+
+.twin-photos img {
+  width: 100%;
+  height: 100%;
+  max-height: 40rem;
+  object-fit: contain;
+}
+
+.twin-photos__caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.twin-photos__caption p {
+  font-size: 1.1rem;
+}
+
+.text-below {
+  margin: 1rem 0;
+}
+
+.text-below ul {
+  padding-inline-start: 1rem;
+}
+
+.link-paper {
+  display: block;
+  margin: 1rem 0;
+  text-decoration: underline;
+}
+
+.repo {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.repo__link {
+  padding: 1.5em clamp(1.5em, 10dvw, 500em);
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}

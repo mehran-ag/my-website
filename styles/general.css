@@ -6,6 +6,7 @@
   --color-black: black;
   --color-blue: blue;
   --color-blue-dark: rgb(1, 1, 207);
+  --color-blue-darkest: rgb(19, 0, 143);
   --color-text: rgba(0, 0, 0, 0.8);
   --color-white-dimmed: rgba(255, 255, 255, 0.4);
   --color-gold: rgb(255, 196, 0);
@@ -16,8 +17,11 @@
   --color-navy: rgb(4, 1, 106);
   --color-navy-light: rgb(4, 1, 106, 0.9);
   --color-navy-lightest: rgb(4, 1, 106, 0.8);
+  --color-navy-light-bck: rgb(4, 1, 106, 0.3);
   --color-grey-dark: rgba(39, 30, 109, 0.681);
   --color-black-dimmed: rgba(40, 37, 42, 0.9);
+  --color-orange: rgb(255, 107, 2);
+  --color-orange-dim: rgba(255, 107, 2, 0.9);
 
 
   --font-text: normal normal 400 16px/1.5 "Libre Baskerville", serif;

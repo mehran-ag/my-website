@@ -31,14 +31,24 @@
   opacity: 1;
 }
 
-.degree {
+.degrees {
+  width: 100%;
+  height: auto;
+  padding: 0 2rem;
+}
+
+.degree-item {
   width: 100%;
   height: auto;
   border-bottom: 1px solid var(--color-blue);
   padding: 2rem;
 }
 
-.degree h2 {
+.degree-item:last-child {
+  border-bottom: none;
+}
+
+.degree-item h2 {
   color: var(--color-blue-dark);
   font-size: 2rem;
   font-weight: 800;
@@ -55,6 +65,6 @@
 }
 
 .degree__text-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 900;
 }
