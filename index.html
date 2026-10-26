@@ -38,7 +38,7 @@
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="./pages/skills.html">
             <i class="fa-solid fa-user-gear icon-nav"></i>
             <span>Skills</span>
           </a>
@@ -66,16 +66,13 @@
         </div>
         <div class="my-intro__text">
           <p>
-            My name is Mehran. I have a PhD in Bioengineering (but this is not the only thing I know!). I have studied Mechanical Engineering for my master's and bachelor's. It has been a fantastic journey for me as I have had many achievements and I have learned a lot. I have enjoyed hands-on courses as well as computational projects. It is always good to have hands-on skills while being a computational person. I have published scientific papers in international journals. I have also participated in conferences. 
+            My name is Mehran, and I have a PhD in Bioengineering, along with bachelor's and master's degrees in Mechanical Engineering. My background combines practical engineering, mechanical design, computational modelling, and research. Throughout my academic and professional journey, I have enjoyed tackling engineering challenges through both hands-on work and computational approaches. I have also published scientific papers in international journals and presented my work at conferences.
           </p>
           <p>
-            I have worked as a Mechanical Engineer for almost 5 years. I started my work experience at a petrochemical company, which was a relatively large complex consisting of many units working together to produce raw materials for plastics. I have seen many different mechanical equipment and parts working together to make the final product.
-            <p>
-              I have also worked as a mechanical designer, where I was a member a team making kitchen appliances.
-            </p>
-            <p>
-             Most recently, I worked as an Operations Engineer at Aroa in New Zealand.
-            </p>
+            I have almost five years of experience in mechanical engineering, including work in the petrochemical industry, mechanical design, and manufacturing operations. I began my career at a petrochemical complex, where I gained exposure to a wide range of mechanical equipment, components, and interconnected industrial processes. I later worked as a mechanical designer, contributing to the design and development of cooktops and barbecues.
+          </p>
+          <p>
+            Most recently, I worked as an Operations Engineer at Aroa Biosurgery in New Zealand, where I contributed to manufacturing operations, engineering design, technical documentation, and process improvement. These experiences have strengthened my practical engineering skills, problem-solving abilities, and understanding of engineering processes in industrial and manufacturing environments.
           </p>
         </div>
       </section>
@@ -85,20 +82,20 @@
             <img src="./images/home/work-photo.jpg" alt="Mehran and colleagues">
           </div>
           <p>
-            I have worked as a Mechanical Engineer in different companies. From large petrochemical complex to a family-owned production company. And lately, I have worked as an Operations Engineer at Aroa in New Zealand, where I had broader range of respinsibilities to support smooth and continuous production.
+            Throughout my career, I have worked across diverse manufacturing environments, from large petrochemical complexes to smaller manufacturing businesses. Most recently, I worked as an Operations Engineer at Aroa in New Zealand, where I took on a broader range of responsibilities to support efficient and continuous production.
           </p>
-          <a class="link card-link">
+          <a href="./pages/experience.html" class="link card-link">
             Read more
           </a>
         </div>
         <div class="card">
           <div id="research-photo" class="card-photo">
-            <img src="./images/home/research-photo.png" at="Channel heat contour arrows">
+            <img src="./images/home/research-photo.png" alt="Channel heat contour arrows">
           </div>
           <p>
-            During and after my academic journey, I have always remained interested in doing research. I enjoy challenges that lead to understanding more about the nature, especially fluids and materials. I want to observe and gain more insight into the things going around in the world. That is why I enjoy seeing new invenstions and I desire to be part of these new discoveries and inventions.
+            During and after my academic journey, I have always been passionate about research. I enjoy challenges that help me understand nature, especially fluids and materials. I like observing the world around me, learning how things work, and discovering new inventions. I hope to be part of these discoveries and help create new things.
           </p>
-          <a class="link card-link">
+          <a href="./pages/research.html" class="link card-link">
             Read more
           </a>
         </div>
@@ -107,9 +104,9 @@
             <img src="./images/home/mehran-graduation.jpg" alt="Mehran graduation">
           </div>
           <p>
-            One of best moments in my life was the day I got my certificate to be a doctor from one the most prestigious universities in the world. Although it seemed to be the end of academic learning, but I will continue learning engineering concepts as I enjoy this. Studying Mechanical Engineering for my bachelor's and master's, I gained enough knowledge to apply and merge it with coding and hands-on skills to make new things or study different phenomena.
+            One of the proudest moments of my life was receiving my PhD certificate from a prestigious university. Although it marked the end of one academic journey, my passion for learning continues. With a background in mechanical- and bio-engineering, I enjoy combining my technical knowledge, coding, and hands-on skills to explore new ideas and create things.
           </p>
-          <a class="link card-link">
+          <a href="./pages/education.html" class="link card-link">
             Read more
           </a>
         </div>
@@ -151,8 +148,11 @@
       </footer>
     </main>
 
-    <!-- <script>
+    <script>
       window.addEventListener("load", () => {
+        // Don't animate again if the visitor has already entered the website
+        if (sessionStorage.getItem("introScrollDone")) return;
+
         const target = document.querySelector("#my-intro");
 
         if (!target) return;
@@ -165,7 +165,6 @@
         function scroll(time) {
           const progress = Math.min((time - startTime) / duration, 1);
 
-          // Ease-in-out animation
           const eased = progress < 0.5
             ? 2 * progress * progress
             : 1 - Math.pow(-2 * progress + 2, 2) / 2;
@@ -174,11 +173,13 @@
 
           if (progress < 1) {
             requestAnimationFrame(scroll);
+          } else {
+            sessionStorage.setItem("introScrollDone", "true");
           }
         }
 
         requestAnimationFrame(scroll);
       });
-    </script> -->
+    </script>
   </body>
 </html>
