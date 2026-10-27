@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>
       This is all about Mehran 
     </title>
@@ -8,132 +11,184 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/15aa180ca6.js" crossorigin="anonymous"></script>
+
   </head>
   
   <body>
+
     <nav class="nav">
+
       <ul>
+
         <li>
-          <a href="">
+          <a href="./index.html">
             <i class="fa-solid fa-house icon-nav icon-nav-active"></i>
             <span>Home</span>
           </a>
         </li>
+
         <li>
           <a href="./pages/education.html">
             <i class="fa-solid fa-user-graduate icon-nav"></i>
             <span>Education</span>
           </a>
         </li>
+
         <li>
           <a href="./pages/experience.html">
             <i class="fa-solid fa-industry icon-nav"></i>
             <span>Work Experience</span>
           </a>
         </li>
+
         <li>
           <a href="./pages/research.html">
             <i class="fa-solid fa-magnifying-glass-chart icon-nav"></i>
             <span>Research</span>
           </a>
         </li>
+
         <li>
           <a href="./pages/skills.html">
             <i class="fa-solid fa-user-gear icon-nav"></i>
             <span>Skills</span>
           </a>
         </li>
+
       </ul>
+
     </nav>
+
     <main class="main-firstpage">
+
       <header class="header">
+
         <p class="header__welcome">
           Welcome to my website
         </p>
+
         <p class="header__mehran">
           <span class="mehran__m">M</span>EHRAN
         </p>
+
         <button class="menu-button" aria-label="Open menu">
           <i class="fa-solid fa-bars hamburger-menu"></i>
         </button>
+
       </header>
+
       <section class="banner-image">
         <img src="./images/home/mechanical-heart.png" alt="mechanical heart">
       </section>
+
       <section id="my-intro" class="my-intro">
+
         <div class="my-intro__photo">
           <img src="./images/home/profile-photo.jpeg">
         </div>
+
         <div class="my-intro__text">
+
           <p>
             My name is Mehran, and I have a PhD in Bioengineering, along with bachelor's and master's degrees in Mechanical Engineering. My background combines practical engineering, mechanical design, computational modelling, and research. Throughout my academic and professional journey, I have enjoyed tackling engineering challenges through both hands-on work and computational approaches. I have also published scientific papers in international journals and presented my work at conferences.
           </p>
+
           <p>
             I have almost five years of experience in mechanical engineering, including work in the petrochemical industry, mechanical design, and manufacturing operations. I began my career at a petrochemical complex, where I gained exposure to a wide range of mechanical equipment, components, and interconnected industrial processes. I later worked as a mechanical designer, contributing to the design and development of cooktops and barbecues.
           </p>
+
           <p>
             Most recently, I worked as an Operations Engineer at Aroa Biosurgery in New Zealand, where I contributed to manufacturing operations, engineering design, technical documentation, and process improvement. These experiences have strengthened my practical engineering skills, problem-solving abilities, and understanding of engineering processes in industrial and manufacturing environments.
           </p>
+
         </div>
+
       </section>
+
       <section class="cards">
+
         <div class="card">
+
           <div class="card-photo">
             <img src="./images/home/work-photo.jpg" alt="Mehran and colleagues">
           </div>
+
           <p>
             Throughout my career, I have worked across diverse manufacturing environments, from large petrochemical complexes to smaller manufacturing businesses. Most recently, I worked as an Operations Engineer at Aroa in New Zealand, where I took on a broader range of responsibilities to support efficient and continuous production.
           </p>
+
           <a href="./pages/experience.html" class="link card-link">
             Read more
           </a>
+
         </div>
+
         <div class="card">
+
           <div id="research-photo" class="card-photo">
             <img src="./images/home/research-photo.png" alt="Channel heat contour arrows">
           </div>
+
           <p>
             During and after my academic journey, I have always been passionate about research. I enjoy challenges that help me understand nature, especially fluids and materials. I like observing the world around me, learning how things work, and discovering new inventions. I hope to be part of these discoveries and help create new things.
           </p>
+
           <a href="./pages/research.html" class="link card-link">
             Read more
           </a>
+
         </div>
+
         <div class="card">
+
           <div class="card-photo">
             <img src="./images/home/mehran-graduation.jpg" alt="Mehran graduation">
           </div>
+
           <p>
             One of the proudest moments of my life was receiving my PhD certificate from a prestigious university. Although it marked the end of one academic journey, my passion for learning continues. With a background in mechanical- and bio-engineering, I enjoy combining my technical knowledge, coding, and hands-on skills to explore new ideas and create things.
           </p>
+
           <a href="./pages/education.html" class="link card-link">
             Read more
           </a>
+
         </div>
+
       </section>
+
       <footer class="main-footer">
+
         <div class="footer__column">
+
           <p>My contact information is provided.</p>
           <p>Feel free to reach out should any questions arise.</p>
+          
         </div>
+
         <div class="footer__column">
+
           <div class="footer-row">
             <i class="fa-solid fa-envelope footer-row__i"></i>
             <a href="mailto:mehranag77@gmail.com">mehranag77@gmail.com</a>
           </div>
+
           <div class="footer-row">
             <i class="fa-brands fa-linkedin footer-row__i"></i>
             <a href="https://www.linkedin.com/in/mehranag/" target="_blank">
               LinkedIn
             </a>
           </div>
+
           <div class="footer-row">
             <i class="fa-brands fa-google-scholar footer-row__i"></i>
             <a href="https://scholar.google.com/citations?user=iEuszTYAAAAJ&hl=en" target="_blank">
               Google Scholar
             </a>
           </div>
+
         </div>
+
         <div class="footer__column">
           <iframe
             src="https://www.google.com/maps?q=Goulburn,NSW,Australia&z=10&output=embed"
@@ -145,10 +200,13 @@
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
+
       </footer>
+
     </main>
 
     <script>
+
       window.addEventListener("load", () => {
         // Don't animate again if the visitor has already entered the website
         if (sessionStorage.getItem("introScrollDone")) return;
@@ -180,6 +238,9 @@
 
         requestAnimationFrame(scroll);
       });
+
     </script>
+
   </body>
+
 </html>
