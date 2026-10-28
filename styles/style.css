@@ -205,7 +205,7 @@ span.span-experience {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: clamp(0.5rem, 10dvw, 2rem);
+  padding: clamp(0.5rem, 5dvw, 2rem);
   transition: transform 0.3s ease;
 }
 
@@ -257,7 +257,8 @@ span.span-experience {
 }
 
 .main-footer {
-  height: 20rem;
+  height: auto;
+  min-height: 20rem;
   width: 100%;
   background-color: var(--color-navy-lightest);
   display: grid;
@@ -345,11 +346,16 @@ span.span-experience {
     z-index: 1;
   }
 
+  .nav li {
+    padding: 1.5rem 0;
+    font-size: 1rem;
+  }
+
   .close-button {
     width: fit-content;
     height: auto;
     cursor: pointer;
-    margin: 3rem 0;
+    margin: 1rem 0;
     z-index: 1;
   }
 
@@ -429,4 +435,15 @@ span.span-experience {
     border-radius: 50%;
   }
 
+}
+
+@media (max-width: 30rem) {
+  .card-photo {
+    width: 100%;
+  }
+
+  .nav li {
+    padding: 1.5rem 0;
+    font-size: 1rem;
+  }
 }
