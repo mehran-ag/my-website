@@ -167,4 +167,13 @@
     line-height: 1.7em;
   }
 
+  .research-item__text {
+    text-align: start;
+  }
+
+  .mechanical-research__header p,
+  .biological-research__header p {
+    text-align: start;
+  }
+
 }

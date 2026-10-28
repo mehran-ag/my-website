@@ -441,4 +441,8 @@ span.span-experience {
     padding: 1.5rem 0;
     font-size: 1rem;
   }
+
+  .card p {
+    text-align: start;
+  }
 }
