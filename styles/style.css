@@ -68,11 +68,6 @@ nav ul {
 
 }
 
-.nav li {
-  padding: 4rem 0;
-  font-size: 1.2rem;
-}
-
 .nav li a {
   text-decoration: none;
   display: flex;
@@ -86,7 +81,7 @@ nav ul {
   transition: display 0.2s ease;
   color: var(--color-white);
   font: var(--font-stylish-bold);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* Show the text when the sidebar is hovered */
@@ -272,7 +267,7 @@ span.span-experience {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 2rem;
+  margin: clamp(0.5rem, 5%, 2rem);
   /* container-type: size-inline; */
 }
 
@@ -407,7 +402,7 @@ span.span-experience {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0 2rem;
+    margin: 0 1rem;
     padding: 2rem 0;
   }
 

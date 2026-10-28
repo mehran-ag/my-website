@@ -5,9 +5,10 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 300px;
+  width: 80%;
+  grid-auto-rows: 15rem;
   gap: 1rem;
-  max-width: 1200px;
+  max-width: 80rem;
   margin: 1rem auto 0 auto;
   padding: clamp(1rem, 2dvw, 2rem);
 }
@@ -88,14 +89,19 @@ p.experience__comp-name {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .item-grid-two img {
-  height: 30rem;
-  width: 100%;
+  height: auto;
+  width: clamp(5rem, 70%, 50rem);
   object-fit: contain;
   margin-block-end: 1rem;
+}
+
+.item-grid-two p {
+  text-align: center;
+  line-height: 1.5em;
 }
 
 .experience-image {
@@ -107,18 +113,25 @@ p.experience__comp-name {
 }
 
 .experience-image img {
-  height: clamp(20rem, 25dvw, 50rem);
+  height: clamp(10rem, 70dvw, 40rem);
   width: auto;
-  margin-block-end: 1rem;
+  margin: 1rem 0;
 }
 
 /* Responsive layout for tablets */
-@media (max-width: 900px) {
+@media (max-width: 60rem) {
   .gallery {
+    width: 90%;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 250px;
     padding: 0.5rem;
-    ;
+  }
+
+  .gallery__item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
   }
 
   .gallery__item--large,
@@ -130,41 +143,35 @@ p.experience__comp-name {
   }
 
   .grid-two-experience {
-    width: 100%;
-    height: auto;
-    display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: 1rem;
-    margin: 2rem 0;
   }
 
-  .item-grid-two {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .item-grid-two img {
-    height: fit-content;
-    width: 100%;
-    object-fit: contain;
-    margin-block-end: 1rem;
-  }
 
 }
 
 /* Responsive layout for mobile phones */
-@media (max-width: 550px) {
-  body {
-    padding: 1rem;
-  }
+@media (max-width: 30rem) {
 
   .gallery {
     grid-template-columns: minmax(0, 1fr);
-    grid-auto-rows: 300px;
-    padding: 0;
+    grid-auto-rows: 200px;
+    padding: 0.5rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery__item {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .gallery__item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
   }
 
   .gallery__item--large,
@@ -174,4 +181,9 @@ p.experience__comp-name {
     grid-column: span 1;
     grid-row: span 1;
   }
+
+  .grid-two-experience {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
 }

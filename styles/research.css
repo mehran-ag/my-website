@@ -13,7 +13,7 @@
   container-type: inline-size;
   width: 100%;
   height: auto;
-  padding: 0 2rem;
+  padding: 0 clamp(1rem, 2.5dvw, 2.5rem);
 }
 
 .mechanical-research__header,
@@ -145,7 +145,7 @@
   color: var(--color-white);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 50rem) {
 
   .twin-photos {
     display: grid;
