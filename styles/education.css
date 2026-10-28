@@ -5,7 +5,7 @@
 .phd {
   width: 100%;
   height: auto;
-  min-height: 40rem;
+  min-height: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,14 +39,14 @@
 .degrees {
   width: 100%;
   height: auto;
-  padding: 0 2rem;
+  padding: 0 clamp(1rem, 2dvw, 4rem);
 }
 
 .degree-item {
   width: 100%;
   height: auto;
   border-bottom: 1px solid var(--color-blue);
-  padding: 2rem;
+  padding: 2rem clamp(1rem, 2dvw, 4rem);
 }
 
 .degree-item:last-child {

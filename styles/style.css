@@ -167,10 +167,11 @@ span.span-experience {
 .my-intro__text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: clamp(35rem, 90%, 80rem);
-  margin: 3rem;
-  padding: 3rem;
+  justify-content: center;
+  /* height: clamp(35rem, 90%, 80rem); */
+  height: auto;
+  margin: clamp(1rem, 2dvw, 3rem);
+  padding: clamp(1.5rem, 2dvw, 3rem);
   background-color: var(--color-navy-light);
   border-radius: 1rem;
   min-width: 0;
@@ -180,8 +181,8 @@ span.span-experience {
   font: var(--font-text-sec);
   font-size: clamp(1rem, 1.2vw, 1.5rem);
   line-height: 1.5em;
-  text-align: justify;
-  margin-block-end: 1.5em;
+  /* text-align: justify; */
+  margin: 0.5em 0;
   overflow-wrap: anywhere;
   color: var(--color-white)
 }

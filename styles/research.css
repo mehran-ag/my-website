@@ -18,8 +18,9 @@
 
 .mechanical-research__header,
 .biological-research__header {
-  margin-block-start: 1.5rem;
-  padding: 1rem;
+
+  margin: clamp(1rem, 2.5dvw, 2.5rem);
+  padding: clamp(0.5rem, 1.5dvw, 1rem) clamp(1rem, 2.5dvw, 2.5rem);
   border-radius: 0.5rem;
   box-shadow: 0px 1px 2px var(--color-black);
   background-color: var(--color-grey-light);
@@ -60,6 +61,7 @@
   height: auto;
   margin-block-start: 2rem;
   margin-block-end: 6rem;
+  padding: clamp(1rem, 2.5dvw, 2rem) clamp(1rem, 2.5dvw, 2.5rem);
 }
 
 /* .research-item:last-child {
