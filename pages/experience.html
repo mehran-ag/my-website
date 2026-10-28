@@ -2,9 +2,14 @@
 
 <html>
   <head>
+
     <title>
       Mehran's Work Experience
     </title>
+
+    <meta charset="UTF-8">
+
+    <meta name="robots" content="noindex, nofollow">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,7 +22,11 @@
 
   <body>
 
-    <nav class="nav">
+    <nav class="nav js-nav">
+
+      <button class="close-button js-close-button" aria-label="Close menu">
+        <i class="fa-solid fa-xmark icon-xmark"></i>
+      </button>
 
       <ul>
         <li>
@@ -35,7 +44,8 @@
         <li>
           <a href="./experience.html">
             <i class="fa-solid fa-industry icon-nav icon-nav-active"></i>
-            <span>Work Experience</span>
+            <span class="span-experience">Work</span>
+            <span class="span-experience">Experience</span>
           </a>
         </li>
         <li>
@@ -62,7 +72,7 @@
           My Experience
         </h1>
 
-        <button class="menu-button" aria-label="Open menu">
+        <button class="menu-button js-menu-button" aria-label="Open menu">
           <i class="fa-solid fa-bars hamburger-menu"></i>
         </button>
         
@@ -149,10 +159,16 @@
 
             <div class="item-grid-two">
               <img src="../images/experience/atashmehr/atashmehr-2.jpeg">
+              <p>
+                A customised AtashMehr island barbecue
+              </p>
             </div>
 
             <div class="item-grid-two">
               <img src="../images/experience/atashmehr/atashmehr-3.jpg">
+              <p>
+                An AtashMehr barbecue
+              </p>
             </div>
 
           </div>
@@ -184,6 +200,9 @@
 
           <div class="experience-image">
             <img src="../images/experience/petro-miandoab/petro-miandoab.jpeg" alt="">
+            <p>
+              Bakhtar Petrochemical Company
+            </p>
           </div>
 
         </div>
@@ -235,7 +254,9 @@
       </footer>
 
     </main>
-    
+
+    <script src="../scripts/javascript.js"></script>
+
   </body>
 
 </html>

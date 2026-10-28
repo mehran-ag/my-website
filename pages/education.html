@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 
 <html>
+
   <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>
       Mehran's Education
     </title>
@@ -9,12 +17,18 @@
     <link rel="stylesheet" href="../styles/general.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/education.css">
+
     <script src="https://kit.fontawesome.com/15aa180ca6.js" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
 
-    <nav class="nav">
+    <nav class="nav js-nav">
+
+      <button class="close-button js-close-button" aria-label="Close menu">
+        <i class="fa-solid fa-xmark icon-xmark"></i>
+      </button>
 
       <ul>
         <li>
@@ -32,7 +46,8 @@
         <li>
           <a href="./experience.html">
             <i class="fa-solid fa-industry icon-nav"></i>
-            <span>Work Experience</span>
+            <span class="span-experience">Work</span>
+            <span class="span-experience">Experience</span>
           </a>
         </li>
         <li>
@@ -59,7 +74,7 @@
           My Education
         </h1>
 
-        <button class="menu-button" aria-label="Open menu">
+        <button class="menu-button js-menu-button" aria-label="Open menu">
           <i class="fa-solid fa-bars hamburger-menu"></i>
         </button>
 
@@ -207,7 +222,9 @@
       setInterval(showNextSlide, 3000);
 
     </script>
-    
+
+    <script src="../scripts/javascript.js"></script>
+
   </body>
 
 </html>

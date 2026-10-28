@@ -4,26 +4,37 @@
 
   <head>
 
+    <meta charset="UTF-8">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>
       This is all about Mehran 
     </title>
 
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/style.css">
+
     <script src="https://kit.fontawesome.com/15aa180ca6.js" crossorigin="anonymous"></script>
 
   </head>
   
   <body>
 
-    <nav class="nav">
+    <nav class="nav js-nav">
+
+      <button class="close-button js-close-button" aria-label="Close menu">
+        <i class="fa-solid fa-xmark icon-xmark"></i>
+      </button>
 
       <ul>
 
         <li>
           <a href="./index.html">
             <i class="fa-solid fa-house icon-nav icon-nav-active"></i>
-            <span>Home</span>
+            <span>Home Page</span>
           </a>
         </li>
 
@@ -37,7 +48,8 @@
         <li>
           <a href="./pages/experience.html">
             <i class="fa-solid fa-industry icon-nav"></i>
-            <span>Work Experience</span>
+            <span class="span-experience">Work</span>
+            <span class="span-experience">Experience</span>
           </a>
         </li>
 
@@ -67,11 +79,11 @@
           Welcome to my website
         </p>
 
-        <p class="header__mehran">
+        <p class="header__mehran js-header__mehran">
           <span class="mehran__m">M</span>EHRAN
         </p>
 
-        <button class="menu-button" aria-label="Open menu">
+        <button class="menu-button js-menu-button" aria-label="Open menu">
           <i class="fa-solid fa-bars hamburger-menu"></i>
         </button>
 
@@ -191,10 +203,8 @@
 
         <div class="footer__column">
           <iframe
+            class="location-map"
             src="https://www.google.com/maps?q=Goulburn,NSW,Australia&z=10&output=embed"
-            width="90%"
-            height="250"
-            style="border: 0"
             loading="lazy"
             allowfullscreen
             referrerpolicy="no-referrer-when-downgrade">
@@ -240,6 +250,8 @@
       });
 
     </script>
+
+    <script src="./scripts/javascript.js"></script>
 
   </body>
 

@@ -1,11 +1,11 @@
 body {
   display: grid;
   grid-template-columns: 5rem auto;
-  transition: grid-template-columns 0.3s ease;
+  transition: grid-template-columns 0.1s ease;
 }
 
 body:has(nav:hover) {
-  grid-template-columns: 14rem 1fr;
+  grid-template-columns: 8rem 1fr;
 }
 
 .main-firstpage {
@@ -20,22 +20,23 @@ body:has(nav:hover) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 1rem clamp(2rem, 4cqw, 4rem);
   background-color: var(--color-grey-light);
   position: relative;
   width: 100%;
   height: 12rem;
+  container-type: inline-size;
 }
 
 .header__welcome {
   font: var(--font-all-capital);
-  font-size: 2.5rem;
-
+  font-size: clamp(1.8rem, 3.5cqw, 2.5rem);
+  width: clamp(10rem, 35%, 50rem);
 }
 
 .header__mehran {
   font: var(--font-mehran);
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 4cqw, 2.5rem);
   color: var(--color-gold);
   text-shadow: 0.8rem 0.8rem 0.5rem var(--color-gold);
   -webkit-text-stroke: 0.5px black;
@@ -43,7 +44,7 @@ body:has(nav:hover) {
 
 .mehran__m {
   font: var(--font-mehran);
-  font-size: 4rem;
+  font-size: clamp(2rem, 6cqw, 4rem);
   color: var(--color-gold);
   text-shadow: 0.8rem 0.8rem 0.5rem var(--color-gold);
   -webkit-text-stroke: 0.5px black;
@@ -93,6 +94,10 @@ nav ul {
   display: block;
 }
 
+span.span-experience {
+  display: block;
+}
+
 .icon-nav {
   color: var(--color-white);
   font-size: 2rem;
@@ -105,7 +110,8 @@ nav ul {
   padding: 0.5em;
 }
 
-.menu-button {
+.menu-button,
+.close-button {
   background: none;
   border: none;
   font-size: 5rem;
@@ -113,9 +119,11 @@ nav ul {
   cursor: pointer;
   display: none;
   align-items: center;
+  background-color: transparent;
 }
 
-.hamburger-menu {
+.hamburger-menu,
+.icon-xmark {
   font-size: 2rem;
 }
 
@@ -157,7 +165,10 @@ nav ul {
 }
 
 .my-intro__text {
-  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: clamp(35rem, 90%, 80rem);
   margin: 3rem;
   padding: 3rem;
   background-color: var(--color-navy-light);
@@ -167,7 +178,7 @@ nav ul {
 
 .my-intro p {
   font: var(--font-text-sec);
-  font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
   line-height: 1.5em;
   text-align: justify;
   margin-block-end: 1.5em;
@@ -288,4 +299,118 @@ nav ul {
 .footer__column:first-child {
   justify-content: start;
   margin-block-start: 3rem;
+}
+
+.location-map {
+  width: 90%;
+  height: 250px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    transition: none;
+    grid-template-columns: 1fr;
+  }
+
+  body:has(nav:hover) {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100dvw;
+    background-color: var(--color-navy-light);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .close-button {
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+    margin: 3rem 0;
+    z-index: 1;
+  }
+
+  .icon-xmark {
+    color: var(--color-white);
+  }
+
+  .nav li span {
+    display: flex;
+  }
+
+  .my-intro {
+    height: auto;
+    min-height: 50rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(15rem, 1fr);
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .my-intro__text {
+    height: auto;
+  }
+
+  .cards {
+    background-color: var(--color-grey-light);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 5rem;
+    height: auto;
+    min-height: 50rem;
+    padding: 2rem;
+  }
+
+  .main-footer {
+    height: auto;
+    width: 100%;
+    background-color: var(--color-navy-lightest);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.1rem;
+    padding: 1rem;
+  }
+
+  .footer__column {
+    border-right: none;
+    border-bottom: 1px solid var(--color-white-dimmed);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 2rem;
+    padding: 2rem 0;
+  }
+
+  .footer__column:last-child {
+    border-bottom: none;
+  }
+
+  .location-map {
+    width: 90%;
+    height: 200px;
+    border: 0;
+    margin-inline: auto;
+  }
+
+  .menu-button {
+    display: flex;
+    flex: column;
+    align-items: center;
+  }
+
 }

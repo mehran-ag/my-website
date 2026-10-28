@@ -1,3 +1,7 @@
+.header__welcome {
+  width: clamp(10rem, 50%, 50rem);
+}
+
 .phd {
   width: 100%;
   height: auto;
@@ -15,6 +19,7 @@
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
+  z-index: 0;
 }
 
 .slide {
@@ -50,13 +55,13 @@
 
 .degree-item h2 {
   color: var(--color-blue-dark);
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 3dvw, 2rem);
   font-weight: 800;
 }
 
 .degree__uni-name {
   margin: 0.5em 0;
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 2dvw, 1.5rem);
 }
 
 .degree__thesis {
