@@ -147,6 +147,7 @@ span.span-experience {
   display: grid;
   grid-template-columns: minmax(15rem, 1fr) minmax(0, 2fr);
   align-items: center;
+  container-type: size-inline;
 }
 
 .my-intro__photo {
@@ -168,7 +169,6 @@ span.span-experience {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* height: clamp(35rem, 90%, 80rem); */
   height: auto;
   margin: clamp(1rem, 2dvw, 3rem);
   padding: clamp(1.5rem, 2dvw, 3rem);
@@ -179,7 +179,7 @@ span.span-experience {
 
 .my-intro p {
   font: var(--font-text-sec);
-  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  font-size: clamp(1.1rem, 1.2dvw, 1.5rem);
   line-height: 1.5em;
   /* text-align: justify; */
   margin: 0.5em 0;
@@ -191,10 +191,10 @@ span.span-experience {
   background-color: var(--color-grey-light);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: 5rem;
+  column-gap: clamp(2rem, 2dvw, 5rem);
   height: auto;
-  min-height: 50rem;
-  padding: 5rem;
+  min-height: 20rem;
+  padding: clamp(2rem, 2dvw, 5rem);
 }
 
 .card {
@@ -203,8 +203,9 @@ span.span-experience {
   box-shadow: 5px 5px 5px var(--color-semilight-grey);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: clamp(0.5rem, 10dvw, 2rem);
   transition: transform 0.3s ease;
 }
 
@@ -213,7 +214,7 @@ span.span-experience {
 }
 
 .card-photo {
-  width: 60%;
+  width: 70%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -228,8 +229,8 @@ span.span-experience {
 }
 
 #research-photo {
-  width: 60%;
-  height: 50%;
+  width: 90%;
+  height: clamp(10rem, 30%, 60rem);
   display: flex;
   justify-content: center;
 }
@@ -242,16 +243,17 @@ span.span-experience {
 }
 
 .card p {
-  margin: 3rem;
+  font-size: clamp(0.9rem, 0.8dvw, 1rem);
+  margin: clamp(0.5rem, 1cqw, 2rem);
   text-align: justify;
 }
 
 .card-link {
   background-color: var(--color-blue);
   color: var(--color-white);
-  padding: 0.75em 1.5em;
-  font-size: 1.2rem;
+  padding: 0.75em clamp(0.5rem, 1dvw, 1.5rem);
   font: var(--font-stylish-bold);
+  font-size: clamp(0.7rem, 0.8dvw, 1rem);
 }
 
 .main-footer {
@@ -270,16 +272,20 @@ span.span-experience {
   flex-direction: column;
   justify-content: space-around;
   margin: 2rem;
+  /* container-type: size-inline; */
 }
 
 .footer__column:last-child {
   border-right: none;
+  justify-self: center;
+  width: 80%;
 }
 
 .footer-row {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: clamp(0.5rem, 1dvw, 1rem);
 }
 
 .footer-row__i {
@@ -290,25 +296,27 @@ span.span-experience {
 .footer-row a {
   margin-inline-start: 1rem;
   color: var(--color-white);
+  font-size: clamp(0.7rem, 2dvw, 0.9rem);
 }
 
 .footer__column p {
   color: var(--color-white);
   margin-block-start: 0.5rem;
+  font-size: clamp(0.7rem, 2dvw, 0.9rem);
 }
 
 .footer__column:first-child {
   justify-content: start;
-  margin-block-start: 3rem;
+  margin-block-start: clamp(1.5rem, 10dvw, 3rem);
 }
 
 .location-map {
   width: 90%;
-  height: 250px;
+  height: 15rem;
   border: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 60rem) {
 
   body {
     transition: none;
@@ -371,9 +379,9 @@ span.span-experience {
     background-color: var(--color-grey-light);
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    row-gap: 5rem;
+    row-gap: 2rem;
     height: auto;
-    min-height: 50rem;
+    min-height: 20rem;
     padding: 2rem;
   }
 
@@ -412,6 +420,13 @@ span.span-experience {
     display: flex;
     flex: column;
     align-items: center;
+  }
+
+  .card-photo img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
   }
 
 }
